@@ -2,14 +2,15 @@
 // Tools > Script Editor, then deploy as a Web App
 
 const SHEET_NAME = 'RSVPs'
-const SUBMIT_TOKEN = 'mQk9x#wR2!vLpZ7n' // must match the token in RSVPForm.jsx
 
 function doPost(e) {
   try {
     const data = JSON.parse(e.postData.contents)
 
-    // Reject requests with a missing or wrong token
-    if (data.token !== SUBMIT_TOKEN) {
+    // Token is stored in Script Properties (File > Project properties > Script properties)
+    // Key: SUBMIT_TOKEN, Value: your secret token
+    const expectedToken = PropertiesService.getScriptProperties().getProperty('SUBMIT_TOKEN')
+    if (!expectedToken || data.token !== expectedToken) {
       return ContentService
         .createTextOutput(JSON.stringify({ status: 'error', message: 'Unauthorized' }))
         .setMimeType(ContentService.MimeType.JSON)

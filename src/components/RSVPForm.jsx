@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './RSVPForm.css'
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwd60TTHQSMy-XBEiUVFIyD0ACjMmDabaete-ZxoPzxa0o7UxNz-OvsL6cB7_arCobO/exec'
-const SUBMIT_TOKEN = 'mQk9x#wR2!vLpZ7n'
+const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL
+const SUBMIT_TOKEN = import.meta.env.VITE_SUBMIT_TOKEN
 
 const emptyGuest = () => ({ firstName: '', lastName: '' })
 

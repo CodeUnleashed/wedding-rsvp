@@ -1,0 +1,37 @@
+.success-card {
+  background: #fffaf4;
+  border: 1px solid #e8c99a50;
+  border-radius: 4px;
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(200, 118, 58, 0.08);
+  margin-bottom: 10px;
+}
+
+.success-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.success-heading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #c8763a;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.success-body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #5a3e28;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.success-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  color: #9a7a5a;
+  margin-top: 16px;
+}

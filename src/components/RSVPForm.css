@@ -87,6 +87,7 @@
   padding: 10px 12px;
   margin-bottom: 10px;
   background: #fff;
+  overflow: hidden;
 }
 
 .guest-row {
@@ -97,6 +98,7 @@
 
 .guest-input {
   flex: 1;
+  min-width: 0;
   padding: 10px 14px;
   border: 1px solid #e0d0b8;
   border-radius: 3px;
@@ -258,11 +260,16 @@
     width: 100%;
   }
   .guest-row {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
   }
   .guest-input {
-    min-width: 0;
-    flex: 1 1 45%;
+    width: 100%;
+    flex: none;
+  }
+  .remove-guest {
+    align-self: flex-end;
   }
   .section-heading {
     font-size: 0.72rem;

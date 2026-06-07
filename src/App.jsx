@@ -202,7 +202,7 @@ export default function App() {
               <span className="divider-diamond">◆</span>
               <span className="divider-line" />
             </div>
-            <p className="respond-by">Please respond by May 30, 2026</p>
+            <p className="respond-by">Please respond by July 30, 2026</p>
           </header>
 
           {submitted

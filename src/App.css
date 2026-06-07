@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background-color: #fdf5ec;
+  background-color: #faf5f0;
   color: #3a2a1a;
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
 .app {
   min-height: 100vh;
-  background-color: #fdf5ec;
+  background: linear-gradient(180deg, #fdf8f3 0%, #f8ede3 40%, #fdf8f3 100%);
 }
 
 /* ════════════════════════════
@@ -28,7 +28,7 @@ body {
   top: 2px;
   left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 0%, #6a8c3a 5%, #6a8c3a 95%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #7a9a5a 5%, #7a9a5a 95%, transparent 100%);
 }
 
 .garland-flowers {
@@ -104,25 +104,25 @@ body {
 }
 
 .family-names {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
-  color: #c8763a;
-  letter-spacing: 0.04em;
-  margin-bottom: 2px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  color: #8c6239;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
 }
 
 .invite-line {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
-  color: #5a3e28;
+  color: #7a5a3a;
   font-style: italic;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 /* ── Arch frame ── */
 .arch-frame {
   position: relative;
-  margin: 10px auto 6px;
+  margin: 16px auto 12px;
   max-width: 420px;
 }
 
@@ -136,31 +136,64 @@ body {
 .arch-text {
   position: relative;
   z-index: 1;
-  padding: 28px 20px 20px;
+  padding: 36px 20px 24px;
 }
 
 .bride-name,
 .groom-name {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(2.8rem, 7vw, 4rem);
+  font-size: clamp(2.6rem, 7vw, 3.8rem);
   font-weight: 400;
-  color: #c8763a;
-  line-height: 1.15;
+  color: #b8860b;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(184, 134, 11, 0.15);
+}
+
+.parents-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #9a7a5a;
+  margin: 2px 0 8px;
 }
 
 .ampersand {
   font-family: 'Great Vibes', cursive;
-  font-size: 2.2rem;
-  color: #c8763a;
-  margin: 2px 0;
+  font-size: 2.4rem;
+  color: #b8860b;
+  margin: 4px 0;
 }
 
 .wedding-date {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  color: #8c6239;
+  letter-spacing: 0.02em;
+  margin: 8px 0 4px;
+}
+
+.venue-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6rem;
+  color: #8c6239;
+  margin: 4px 0 2px;
+}
+
+.venue-address {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  color: #c8763a;
-  letter-spacing: 0.04em;
-  margin: 8px 0 16px;
+  font-size: 0.95rem;
+  color: #7a5a3a;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.venue-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.venue-link:hover {
+  text-decoration: underline;
 }
 
 /* ── KINDLY RSVP divider ── */
@@ -176,12 +209,12 @@ body {
   display: inline-block;
   width: 48px;
   height: 1px;
-  background: #c8763a;
+  background: #b8860b;
 }
 
 .divider-diamond {
   font-size: 0.45rem;
-  color: #c8763a;
+  color: #b8860b;
 }
 
 .divider-text {
@@ -189,26 +222,27 @@ body {
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.22em;
-  color: #c8763a;
+  color: #b8860b;
 }
 
 .respond-by {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.95rem;
   color: #7a5a3a;
+  font-style: italic;
   margin-bottom: 20px;
 }
 
-/* ── Bottom gate ── */
-.gate-wrap {
-  margin-top: 8px;
+/* ── Bottom border ── */
+.bottom-border-wrap {
+  margin-top: 16px;
   text-align: center;
 }
 
-.gate-svg {
+.bottom-border-svg {
   width: 100%;
   max-width: 500px;
-  height: 90px;
+  height: 50px;
 }
 
 /* ════════════════════════════

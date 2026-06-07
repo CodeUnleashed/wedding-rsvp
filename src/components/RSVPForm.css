@@ -1,10 +1,10 @@
 .rsvp-card {
-  background: #fffaf4;
-  border: 1px solid #e8c99a50;
+  background: #fffcf8;
+  border: 1px solid #e8d6b850;
   border-radius: 4px;
   padding: 28px 32px 32px;
   margin-bottom: 10px;
-  box-shadow: 0 2px 20px rgba(200, 118, 58, 0.08);
+  box-shadow: 0 2px 20px rgba(184, 134, 11, 0.06);
 }
 
 /* ── Sections ── */
@@ -42,14 +42,14 @@
   flex: 1;
   max-width: 220px;
   padding: 12px 16px;
-  border: 1.5px solid #c8763a;
+  border: 1.5px solid #b8860b;
   border-radius: 3px;
   background: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: #c8763a;
+  color: #b8860b;
   cursor: pointer;
   transition: all 0.2s;
   display: flex;
@@ -59,11 +59,11 @@
 }
 
 .attend-btn:hover {
-  background: #c8763a10;
+  background: rgba(184, 134, 11, 0.06);
 }
 
 .attend-btn.active {
-  background: #c8763a;
+  background: #b8860b;
   color: #fff;
 }
 
@@ -81,22 +81,8 @@
   margin-bottom: 6px;
 }
 
-.guest-list-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-
-.contact-hint {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 0.8rem;
-  color: #bba882;
-  font-style: italic;
-}
-
 .guest-card {
-  border: 1px solid #e8d8bc;
+  border: 1px solid #e8d6b8;
   border-radius: 3px;
   padding: 10px 12px;
   margin-bottom: 10px;
@@ -109,102 +95,10 @@
   align-items: center;
 }
 
-.guest-row--meal {
-  margin-top: 8px;
-}
-
-/* ── Radio button ── */
-.radio-tooltip-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.radio-wrap {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  padding: 2px;
-}
-
-.guest-radio {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.radio-dot {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ddc9a8;
-  border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
-  position: relative;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(200, 118, 58, 0.08);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-.radio-dot::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #c8763a;
-  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.guest-radio:checked + .radio-dot {
-  border-color: #c8763a;
-  background: #fff8f2;
-  box-shadow: 0 0 0 3px rgba(200, 118, 58, 0.15);
-}
-
-.guest-radio:checked + .radio-dot::after {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.radio-wrap:hover .radio-dot {
-  border-color: #c8763a;
-  box-shadow: 0 0 0 3px rgba(200, 118, 58, 0.1);
-}
-
-.guest-radio:focus-visible + .radio-dot {
-  outline: 2px solid #c8763a;
-  outline-offset: 2px;
-}
-
-/* ── Primary contact pill ── */
-.primary-pill {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 0.75rem;
-  font-style: italic;
-  color: #c8763a;
-  border: 1px solid #e8c99a;
-  border-radius: 20px;
-  padding: 2px 10px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  background: #fff8f2;
-  animation: pill-in 0.2s ease;
-}
-
-@keyframes pill-in {
-  from { opacity: 0; transform: scale(0.85); }
-  to   { opacity: 1; transform: scale(1); }
-}
 .guest-input {
   flex: 1;
   padding: 10px 14px;
-  border: 1px solid #ddc9a8;
+  border: 1px solid #e0d0b8;
   border-radius: 3px;
   background: #fff;
   font-family: 'Cormorant Garamond', serif;
@@ -214,18 +108,18 @@
 }
 
 .guest-input::placeholder {
-  color: #bba882;
+  color: #c0a878;
 }
 
 .guest-input:focus {
   outline: none;
-  border-color: #c8763a;
+  border-color: #b8860b;
 }
 
 .remove-guest {
   background: none;
   border: none;
-  color: #bba882;
+  color: #c0a878;
   font-size: 0.85rem;
   cursor: pointer;
   padding: 4px 6px;
@@ -234,7 +128,7 @@
 }
 
 .remove-guest:hover {
-  color: #c8763a;
+  color: #b8860b;
 }
 
 /* ── Add guest button ── */
@@ -244,20 +138,20 @@
   max-width: 280px;
   margin: 4px auto 0;
   padding: 10px 16px;
-  border: 1.5px solid #c8763a;
+  border: 1.5px solid #b8860b;
   border-radius: 3px;
   background: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  color: #c8763a;
+  color: #b8860b;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .add-guest-btn:hover {
-  background: #c8763a10;
+  background: rgba(184, 134, 11, 0.06);
 }
 
 .add-guest-btn:disabled {
@@ -268,7 +162,7 @@
 /* ── Dots divider ── */
 .dots-divider {
   text-align: center;
-  color: #c8763a;
+  color: #b8860b;
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   margin: 4px 0 20px;
@@ -283,7 +177,7 @@
 .contact-input {
   width: 100%;
   padding: 10px 14px;
-  border: 1px solid #ddc9a8;
+  border: 1px solid #e0d0b8;
   border-radius: 3px;
   background: #fff;
   font-family: 'Cormorant Garamond', serif;
@@ -294,12 +188,12 @@
 }
 
 .contact-input::placeholder {
-  color: #bba882;
+  color: #c0a878;
 }
 
 .contact-input:focus {
   outline: none;
-  border-color: #c8763a;
+  border-color: #b8860b;
 }
 
 /* ── Honeypot ── */
@@ -317,7 +211,7 @@
   display: block;
   width: 100%;
   padding: 14px;
-  background: #c8763a;
+  background: #b8860b;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -331,7 +225,7 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #a85e28;
+  background: #996f08;
 }
 
 .submit-btn:disabled {

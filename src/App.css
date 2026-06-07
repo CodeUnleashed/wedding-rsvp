@@ -248,12 +248,48 @@ body {
 /* ════════════════════════════
    RESPONSIVE
 ════════════════════════════ */
-@media (max-width: 640px) {
-  .side-col { width: 70px; }
-  .bride-name, .groom-name { font-size: 2.4rem; }
+@media (max-width: 768px) {
+  .side-col { width: 80px; }
+  .bride-name, .groom-name { font-size: 2.6rem; }
+  .family-names { font-size: 1.5rem; }
+  .wedding-date { font-size: 1.5rem; }
+  .venue-name { font-size: 1.3rem; }
+  .center-content { padding: 0 4px; }
+}
+
+@media (max-width: 600px) {
+  .side-col { width: 60px; }
+  .lantern-wrap svg { width: 36px; }
+  .bouquet-wrap svg { width: 80px; height: auto; }
+  .bride-name, .groom-name { font-size: 2.2rem; }
+  .ampersand { font-size: 1.8rem; }
+  .arch-text { padding: 28px 12px 20px; }
+  .invitation-header { padding: 16px 8px 0; }
+  .garland-bar { height: 60px; }
+  .family-names { font-size: 1.3rem; }
+  .wedding-date { font-size: 1.3rem; }
+  .venue-name { font-size: 1.2rem; }
 }
 
 @media (max-width: 460px) {
   .side-col { display: none; }
+
+  .page-wrapper {
+    padding: 0 12px;
+  }
+
+  .garland-bar { height: 50px; }
   .garland-flowers { gap: 0; }
+  .hanging-flower-wrap svg { width: 20px; }
+
+  .invitation-header { padding: 12px 4px 0; }
+  .family-names { font-size: 1.2rem; }
+  .bride-name, .groom-name { font-size: clamp(1.8rem, 10vw, 2.4rem); }
+  .ampersand { font-size: 1.6rem; }
+  .parents-line { font-size: 0.78rem; }
+  .wedding-date { font-size: 1.2rem; }
+  .venue-name { font-size: 1.1rem; }
+  .invite-line { font-size: 0.9rem; }
+  .divider-line { width: 32px; }
+  .arch-text { padding: 24px 8px 16px; }
 }

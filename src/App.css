@@ -122,8 +122,9 @@ body {
 /* ── Arch frame ── */
 .arch-frame {
   position: relative;
-  margin: 16px auto 12px;
-  max-width: 420px;
+  margin: 20px auto 12px;
+  max-width: 620px;
+  padding: 0 16px;
 }
 
 .arch-outline {
@@ -135,8 +136,7 @@ body {
 
 .arch-text {
   position: relative;
-  z-index: 1;
-  padding: 36px 20px 24px;
+  padding: 100px 20px 32px;
 }
 
 .bride-name,
@@ -291,5 +291,5 @@ body {
   .venue-name { font-size: 1.1rem; }
   .invite-line { font-size: 0.9rem; }
   .divider-line { width: 32px; }
-  .arch-text { padding: 24px 8px 16px; }
+  .arch-text { padding: 48px 8px 16px; }
 }

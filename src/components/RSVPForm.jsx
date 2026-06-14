@@ -66,16 +66,23 @@ export default function RSVPForm({ onSubmit }) {
 
     setLoading(true)
     try {
+      console.log('RSVP submitting:', payload)
       if (GOOGLE_SCRIPT_URL) {
-        await fetch(GOOGLE_SCRIPT_URL, {
+        fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify(payload),
         })
+          .then(() => console.log('RSVP sent to Google Sheets'))
+          .catch((err) => console.error('RSVP fetch failed:', err))
+      } else {
+        console.warn('RSVP: No GOOGLE_SCRIPT_URL configured, skipping fetch')
       }
       onSubmit(payload)
-    } catch {
+      console.log('RSVP success page triggered')
+    } catch (err) {
+      console.error('RSVP submission error:', err)
       setError('Something went wrong. Please try again.')
     } finally {
       setLoading(false)

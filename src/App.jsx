@@ -88,22 +88,22 @@ function RoseBouquet({ flip = false }) {
 /* ── SVG: Mughal arch frame (gold, pointed top) ── */
 function MughalArch() {
   return (
-    <svg className="arch-outline" viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      {/* Main arch — pointed Mughal style, taller legs */}
-      <path d="M30,380 L30,140 Q30,50 170,10 Q310,50 310,140 L310,380"
+    <svg className="arch-outline" viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      {/* Main arch — pointed Mughal style, wide */}
+      <path d="M10,380 L10,130 Q10,40 200,8 Q390,40 390,130 L390,380"
         fill="none" stroke="#b8860b" strokeWidth="2" opacity="0.5"/>
       {/* Inner arch */}
-      <path d="M50,380 L50,150 Q50,65 170,28 Q290,65 290,150 L290,380"
+      <path d="M28,380 L28,140 Q28,55 200,24 Q372,55 372,140 L372,380"
         fill="none" stroke="#b8860b" strokeWidth="1" opacity="0.3"/>
       {/* Top ornament — finial */}
-      <circle cx="170" cy="6" r="4" fill="#b8860b" opacity="0.6"/>
-      <path d="M166,2 Q170,-5 174,2" fill="#b8860b" opacity="0.5"/>
+      <circle cx="200" cy="4" r="4" fill="#b8860b" opacity="0.6"/>
+      <path d="M196,0 Q200,-6 204,0" fill="#b8860b" opacity="0.5"/>
       {/* Pillar caps */}
-      <rect x="24" y="370" width="14" height="3" fill="#b8860b" opacity="0.4" rx="1"/>
-      <rect x="302" y="370" width="14" height="3" fill="#b8860b" opacity="0.4" rx="1"/>
+      <rect x="4" y="370" width="14" height="3" fill="#b8860b" opacity="0.4" rx="1"/>
+      <rect x="382" y="370" width="14" height="3" fill="#b8860b" opacity="0.4" rx="1"/>
       {/* Corner decorations */}
-      <circle cx="45" cy="135" r="3" fill="#b8860b" opacity="0.3"/>
-      <circle cx="295" cy="135" r="3" fill="#b8860b" opacity="0.3"/>
+      <circle cx="28" cy="130" r="3" fill="#b8860b" opacity="0.3"/>
+      <circle cx="372" cy="130" r="3" fill="#b8860b" opacity="0.3"/>
     </svg>
   )
 }

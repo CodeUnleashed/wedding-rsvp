@@ -136,7 +136,7 @@ body {
 
 .arch-text {
   position: relative;
-  padding: 100px 20px 32px;
+  padding: 100px 24px 32px;
 }
 
 .bride-name,
@@ -263,7 +263,7 @@ body {
   .bouquet-wrap svg { width: 80px; height: auto; }
   .bride-name, .groom-name { font-size: 2rem; }
   .ampersand { font-size: 1.8rem; }
-  .arch-text { padding: 80px 32px 24px; }
+  .arch-text { padding: 80px 20px 24px; }
   .invitation-header { padding: 16px 8px 0; }
   .garland-bar { height: 60px; }
   .family-names { font-size: 1.3rem; }
@@ -291,5 +291,5 @@ body {
   .venue-name { font-size: 1.1rem; }
   .invite-line { font-size: 0.9rem; }
   .divider-line { width: 32px; }
-  .arch-text { padding: 70px 28px 20px; }
+  .arch-text { padding: 70px 16px 20px; }
 }

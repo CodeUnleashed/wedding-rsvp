@@ -53,7 +53,23 @@ export default function RSVPForm({ onSubmit }) {
       return
     }
 
-    const payload = {
+    // Validate phone format if provided (10+ digits, allows common separators)
+    if (phone.trim()) {
+      const digits = phone.replace(/\D/g, '')
+      if (digits.length < 10) {
+        setError('Please enter a valid phone number (at least 10 digits).')
+        return
+      }
+    }
+
+    // Validate email format if provided
+    if (email.trim()) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailPattern.test(email.trim())) {
+        setError('Please enter a valid email address.')
+        return
+      }
+    }    const payload = {
       token: SUBMIT_TOKEN,
       attending,
       guests: guests.map(g => ({
